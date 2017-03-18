@@ -1,4 +1,4 @@
-Implementation of http://content.codersdojo.org/code-kata-catalogue/berlin-clock/
+Implementation of http://agilekatas.co.uk/katas/BerlinClock-Kata
 
 
 Please make sure you have java 8 installed.
