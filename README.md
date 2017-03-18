@@ -1,4 +1,4 @@
-Implementation of http://agilekatas.co.uk/katas/BerlinClock-Kata
+Java implementation of http://agilekatas.co.uk/katas/BerlinClock-Kata
 
 
 Please make sure you have java 8 installed.
