@@ -1,11 +1,20 @@
-node {
-      stage('Build') {
-          echo 'Building....'
-      }
-      stage('Test') {
-          echo 'Building....'
-      }
-      stage('Deploy') {
-          echo 'Deploying....'
-}
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh('mvn install')
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
 }
