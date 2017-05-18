@@ -1,18 +1,16 @@
 pipeline {
     agent any
-    tools {
-        maven 'maven-3.5.0'
-    }
     stages {
-        stage('test mvn') {
+        stage('Install') {
             steps {
-                sh 'mvn --version'
+                script {
+                    withMaven(maven: 'maven-3.0.5', mavenSettingsConfig: 'sandbox-settings-mvn') {
+                        sh "mvn install"
+                    }
+                }
             }
         }
-        stage('install') {
-            steps {
-                sh 'mvn clean install'
-            }
-        }        
     }
 }
+
+
