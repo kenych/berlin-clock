@@ -1,19 +1,12 @@
 pipeline {
     agent any
+    tools {
+        maven 'maven-3.0.5' 
+    }
     stages {
-        stage('Build') {
+        stage('Example') {
             steps {
-                sh('mvn install')
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                sh 'mvn --version'
             }
         }
     }
