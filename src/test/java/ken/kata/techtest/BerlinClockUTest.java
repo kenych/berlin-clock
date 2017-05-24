@@ -41,7 +41,8 @@ public class BerlinClockUTest {
         String input = testCase.first;
         String expected = testCase.second;
 
-        String actual = berlinClock.displayTime(input);
+//        String actual = berlinClock.displayTime(input);
+        String actual = "wrong";        
         System.out.println(input + " -> " + actual);
 
         assertThat(actual).overridingErrorMessage("for input: " + input +
