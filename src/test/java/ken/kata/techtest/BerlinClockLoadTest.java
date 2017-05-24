@@ -15,7 +15,7 @@ import java.util.concurrent.Future;
 
 import static java.util.concurrent.Executors.newFixedThreadPool;
 import static java.util.stream.IntStream.range;
-import static org.fest.assertions.api.Assertions.assertThat
+import static org.fest.assertions.api.Assertions.assertThat;
 
 /**
  * This class tests berlinClock.displayTime method under concurrent load.
