@@ -3,7 +3,7 @@
 
     <groupId>ken</groupId>
     <artifactId>berlin-clock</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>berlin-clock</name>
@@ -15,7 +15,7 @@
 
     <scm>
         <connection>scm:git://https://github.com/kenych/berlin-clock</connection>
-        <tag>{project.version}</tag>
+        <tag>1.0</tag>
     </scm>
 
 
